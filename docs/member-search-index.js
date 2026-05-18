@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"de.lubowiecki","c":"Basics","l":"Basics()","u":"%3Cinit%3E()","k":"3"},{"p":"de.lubowiecki","c":"Basics","l":"machWas()","k":"6"},{"p":"de.lubowiecki","c":"Basics","l":"main(String[])","u":"main(java.lang.String[])","k":"6"}];updateSearchResults();

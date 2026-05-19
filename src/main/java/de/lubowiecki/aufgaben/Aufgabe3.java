@@ -9,5 +9,4 @@ public class Aufgabe3 {
     Am Ende wird die Zufallszahl angezeigt ink. einer Meldung, ob sie gefunden wurde.
      */
 
-
 }

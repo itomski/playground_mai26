@@ -12,8 +12,21 @@ public class Eingabe {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Eingabe: "); // print ist Ausgabe OHNE Zeilenumbruch
-        int zahl = scanner.nextInt(); // Liest eine Zahl ein
+
+        // Scanner liest eine Zahl von der Konsole ein
+        // und weist sie einer Variable zu
+        int zahl = scanner.nextInt();
+
         System.out.println(zahl); // println ist Ausgabe MIT Zeilenumbruch
 
+        if(zahl < 16) {
+            System.out.println("zu jung");
+        }
+        else if(zahl > 100){
+            System.out.println("zu spät");
+        }
+        else {
+            System.out.println("passt");
+        }
     }
 }

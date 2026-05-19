@@ -13,5 +13,17 @@ public class NewSwitch {
             case 30 -> System.out.println("Noch besser");
             case 40 -> System.out.println("Top");
         }
+
+        // Mit Rückgabe
+        // Der Inhalt des case wird der Variable zugewiesen
+       String s = switch(i) {
+            case 10 -> "Gut";
+            case 20 -> "Sehr gut";
+            case 30 -> "Noch besser";
+            case 40 -> "Top";
+            default -> "Unbekannt";
+        };
+
+        System.out.println(s);
     }
 }

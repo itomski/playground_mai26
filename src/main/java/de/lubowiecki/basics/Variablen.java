@@ -11,10 +11,31 @@ public class Variablen {
     // Klassenmethode
     public static void machWas() {
 
+        // Methoden-Parameter sind lokale Variablen
+
         // Lokale Variable = Nur in dieser Methode und nur während der Ausführung verfügbar
         String ganzAndererText = "Local: machWas";
         System.out.println(ganzAndererText);
 
+        {
+            // Eine Variable ist in dem Block sichtbar, in dem sie deklariert ist
+            // ... und seinen Unetrblöcken
+            int i = 100;
+            System.out.println(i);
+        }
+        //System.out.println(i); // Error: i ist hier out-of-scope
+
+        //int i = 100; // Redeklaration im gleichen Scope - nicht erlaubt
+        for (int i = 0; i < 10; i++) {
+            System.out.println(i);
+        }
+        // i ist hier out-of-scope
+
+        System.out.println("-------");
+
+        for (int i = 0; i < 10; i++) {
+            System.out.println(i);
+        }
     }
 
     // Instanzmethode

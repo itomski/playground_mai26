@@ -19,6 +19,7 @@ public class Aufgabe5 {
     cup2.roll(); // Liefert einen Wert zwischen 1 und 100
 
     Siehe de.lubowiecki.oop.DiceCup
+    Siehe de.lubowiecki.basics.KonstruktorTest
     */
 
 

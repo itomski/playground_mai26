@@ -1,4 +1,4 @@
-package de.lubowiecki;
+package de.lubowiecki.basics;
 
 public class PrimitiveDatentypen {
 

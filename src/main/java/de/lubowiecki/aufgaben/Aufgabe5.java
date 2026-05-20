@@ -20,6 +20,8 @@ public class Aufgabe5 {
 
     Siehe de.lubowiecki.oop.DiceCup
     Siehe de.lubowiecki.basics.KonstruktorTest
+
+    Alt+Einf = Generator
     */
 
 

@@ -10,5 +10,11 @@ public class Aufgabe7 {
     ebenfalls berechnet und ausgeben werden.
 
     Definiere für den Quaders eine toString-Methode die, die Werte anzeigt
+
+    Aufgabe 2
+    Erweitere die Rechner-Klasse um ein Protokoll.
+    Jeder Operation die Ausgeführt wird, wird protokolliert.
+    Gibt man das Protokoll raus, dann erscheinen alle bis jetzt ausgeführten Rechnungen auf der Konsole.
+
     */
 }

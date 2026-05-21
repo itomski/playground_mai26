@@ -14,4 +14,12 @@ public class Pkw {
         }
         return false;
     }
+
+    // Methode aus Object, wird durch diese Variante ersetzt
+    @Override
+    public String toString() { // Konvertiert das Objekt in String
+        return "Pkw{" +
+                "geschwindigkeit=" + geschwindigkeit +
+                '}';
+    }
 }

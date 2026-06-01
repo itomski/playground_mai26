@@ -17,6 +17,26 @@ public class Aufgabe9 {
     Der Spieler wird gefragt, ob er noch ein weiteres Mal spielen möchte.
      */
 
+    public static void main(String[] args) {
 
 
+        int[][] spielfeld = new int[10][10];
+        spielfeld[1][2] = 1;
+        spielfeld[3][7] = 1;
+        spielfeld[2][5] = 2;
+        spielfeld[0][8] = 1;
+
+        for(int[] reihe : spielfeld){
+            System.out.print("|");
+            for(int zelle : reihe){
+                String output = switch(zelle) {
+                    case 1 -> "\uD83C\uDF44";
+                    case 2 -> "\uD83C\uDF44\u200D\uD83D\uDFEB";
+                    default -> "  ";
+                };
+                System.out.print(output);
+            }
+            System.out.print("| \n");
+        }
+    }
 }

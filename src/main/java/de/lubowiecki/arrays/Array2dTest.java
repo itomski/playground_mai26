@@ -1,5 +1,6 @@
 package de.lubowiecki.arrays;
 
+import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -92,6 +93,37 @@ public class Array2dTest {
         andereZahlen = Arrays.copyOf(andereZahlen, 5); // Erzeugt ein neues Array, übernimmt die alten Elemente
         andereZahlen = Arrays.copyOf(andereZahlen, 5); // Erzeugt ein neues Array, übernimmt die alten Elemente
         System.out.println(Arrays.toString(andereZahlen));
+
+        double[][] preise = {{10.5, 20.5}, {10.7, 20.7}};
+        System.out.println(Arrays.toString(preise));
+        System.out.println(Arrays.deepToString(preise)); // Bei mehrdimensionalen Arrays
+
+        System.out.println();
+
+        int[] zahlen5 = {2,7,-18,22,9,8};
+        System.out.println(Arrays.toString(zahlen5));
+        Arrays.sort(zahlen5);
+        System.out.println(Arrays.toString(zahlen5));
+
+        System.out.println();
+
+        String[] namen = {"bruce", "Peter", "Bruce", "Tony", "Carol"};
+        Arrays.sort(namen); // natürliche Ordnung
+        System.out.println(Arrays.toString(namen));
+
+        int[] zahlen6 = new int[10]; // 10x 0
+        Arrays.fill(zahlen6, 7); // Füllt alle Array-Positionen mit 7
+        System.out.println(Arrays.toString(zahlen6));
+
+        // ArrayIndexOutOfBounds
+        //System.out.println(zahlen6[-1]); // Index wird erst zur Laufzeit geprüft
+
+        int[] zahlen7 = {1,3,7,19,22,100,900};
+        // binarySearch setzt eine Sortierung voraus
+        int pos = Arrays.binarySearch(zahlen7, 1);
+        System.out.println("Gefunden an Pos. " + pos);
+
+
 
     }
 }

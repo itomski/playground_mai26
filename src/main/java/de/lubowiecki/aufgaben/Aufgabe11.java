@@ -11,6 +11,12 @@ public class Aufgabe11 {
     z.B.
     20.02.2026/17:55:35 - INFO - Methode sowieso wurde aufgerufen
 
+    Level könnte INFO, ERROR, DEBUG, WARNING sein. Es ist einfach ein Label, der den Grund des Log-Eintrags beschreibt.
+    INFO = Allgemeine Information z.B. Hinweis auf Aufruf einer bestimmten Methode
+    ERROR = Aktuelles Problem z.B. Wert einer Variable ungültig
+    DEBUG = z.B. Zustand einer Variable
+    WARNING = Hinweis auf mögliche zukünftige Probleme
+
     Über die Methode printLog() bekommt man alle Einträge auf ein mal angezeigt.
     Je ein Eintrag pro Zeile.
 

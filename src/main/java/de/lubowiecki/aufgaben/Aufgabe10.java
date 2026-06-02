@@ -25,8 +25,7 @@ public class Aufgabe10 {
         Wuerfelbecher cup3 = new Wuerfelbecher(20);
         System.out.println(cup3.roll());
         System.out.println(Arrays.toString(cup3.roll(10)));
-
-
+        
     }
 }
 

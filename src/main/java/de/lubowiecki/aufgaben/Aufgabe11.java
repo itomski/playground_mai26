@@ -28,4 +28,7 @@ public class Aufgabe11 {
     Der silent-Modus ist per default deaktiviert.
      */
 
+    public static void main(String[] args) {
+    }
+
 }

@@ -61,7 +61,31 @@ public class StringTest {
         sb = new StringBuilder(100); // capacity = 100
 
         // Die Methoden manipulieren direkt das StringBuilder-Objekt
-        sb.append(123).append(" ").append(10.2);
+        sb.append(123)
+                .append(" ")
+                .append(10.2)
+                .delete(1, 4)
+                .insert(0, true);
 
+        System.out.println(sb);
+
+        System.out.println(sb.substring(3)); // Ab Index 3
+        System.out.println(sb.substring(3, 5)); // Ab Index 3 bis Index 5
+
+        System.out.println();
+
+        StringBuilder sb2 = new StringBuilder(10_000);
+        sb2.append("Moin Moin");
+        System.out.println(sb2.length()); // Anzahl Zeichen
+        System.out.println(sb2.capacity()); // Größe des internen Arrays
+        sb2.trimToSize(); // Größe des internen Arrays wird angepasst
+        System.out.println(sb2.capacity());
+
+        sb2.ensureCapacity(100); // Stellt sicher, dass die capacity für 100 Zeichen ausreicht
+        System.out.println(sb2.capacity());
+
+        sb2.setLength(10); // Die Länge wird zugeschnitten... dabei können Zeichen verloren gehen
+        sb2.setLength(1000); // Wird die Länge vergößert kommen Zeichen dazu
+        System.out.println(sb2.capacity());
     }
 }

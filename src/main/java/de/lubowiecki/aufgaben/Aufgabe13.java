@@ -10,4 +10,5 @@ public class Aufgabe13 {
     Erweitere das Programm, so dass auch ein Export der Produkte in einer Text-Datei möglich ist.
     */
 
+
 }

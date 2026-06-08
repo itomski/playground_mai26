@@ -4,10 +4,10 @@ public class InterfaceVererbung {
 
     public static void main(String[] args) {
 
-        //
-
-
-
+        // Interface kann auch als Referenztyp genutzt werden
+        Printable p1 = new WordDocument();
+        p1.print();
+        p1.print(10);
     }
 }
 
@@ -22,6 +22,10 @@ interface Printable {
     // Alle Instanzmethoden ohne Body sind im Interface automatisch public und abstrakt
     void print();
 
+    default void print(int page) {
+        throw new UnsupportedOperationException("Noch nicht implementiert");
+    }
+
     // Zusätzlich sind statische Methoden erlaubt - automatisch public
     static void printNull() {
         System.out.println("NULL");
@@ -33,4 +37,15 @@ interface Printable {
     default int getStaus() { // Erst seit Java 1.8 möglich
         return status;
     }
+}
+
+class WordDocument implements Printable {
+
+    @Override
+    public void print() {
+        System.out.println("WordDoc wird geprintet");
+    }
+
+    // Wird eine default Methode nicht überschrieben, dann erbt die Klasse die Funktionalität
+
 }

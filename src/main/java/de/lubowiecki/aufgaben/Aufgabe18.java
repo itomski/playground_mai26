@@ -1,5 +1,7 @@
 package de.lubowiecki.aufgaben;
 
+import java.util.Arrays;
+
 public class Aufgabe18 {
 
     /*
@@ -19,5 +21,14 @@ public class Aufgabe18 {
 
     Sollte die Bewegung in eine Richtung nicht möglich sein und ein Exception geworfen werden, dann
     fange die Exception ab und reagiere entsprechend.
+    (Entweder den Rest der Bewegung ignorieren oder nur unerlaubte Schritte ignorieren)
     */
+
+    public static void main(String[] args) {
+
+        String eingabe = ">>>>R>>>L>>";
+
+        String[] arr = eingabe.trim().toUpperCase().split("");
+        System.out.println(Arrays.toString(arr));
+    }
 }

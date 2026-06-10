@@ -1,8 +1,8 @@
-package de.lubowiecki.aufgaben;
+package de.lubowiecki.aufgaben.loesungen.robots;
 
-import java.util.Arrays;
+import java.util.Scanner;
 
-public class Aufgabe18 {
+public class App {
 
     /*
     Schreibe ein Konsolen-Programm zur Simulation eines Roboters. Der Roboter soll auf einem
@@ -24,11 +24,31 @@ public class Aufgabe18 {
     (Entweder den Rest der Bewegung ignorieren oder nur unerlaubte Schritte ignorieren)
     */
 
+    private static final Scanner scanner = new Scanner(System.in);
+
     public static void main(String[] args) {
 
-        // TODO Spielfeld
-        // TODO Bot
-        // TODO Bot Steuerung (Richtung)
-        // TODO Bot Steuerung (Bewegung)
+        Board board = new Board(10);
+        Bot bot = new Bot();
+
+        board.set(bot);
+        board.print();
+
+        while(true) {
+            System.out.print("Eingabe: ");
+
+            String input = scanner.next().trim().toUpperCase();
+
+            if(input.equals("EXIT")) break; // Programm verlassen
+
+            String[] steps = input.split("");
+
+            for (String step : steps) {
+                bot.move(step); // Roboter steuern
+                // TODO: Alte Position leeren
+                if (!board.set(bot)) break; // Auf dem Board positionieren
+            }
+            board.print();
+        }
     }
 }

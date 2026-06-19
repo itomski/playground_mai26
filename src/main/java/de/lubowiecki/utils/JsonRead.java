@@ -26,9 +26,6 @@ public class JsonRead {
         catch(Exception e) {
             e.printStackTrace();
         }
-
-
-
     }
 
 }

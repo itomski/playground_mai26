@@ -28,7 +28,25 @@ public class StringFormatTest {
         System.out.printf("%010d \n", 10);
         System.out.printf("%.2f \n", 10d);
 
+        // Bei dem for-i Kann die Laufvariable direkt im Head erzeugt werden...
+        // Es kann aber auch eine bereits deklarierte Variable verwendet werden
+        int i = 0; // scope von i ist die main-Methode
+        for (; i < 10; i++) {
+        }
 
+        System.out.println(i);
+
+        for(i = 0; i < 20; i++) {
+        }
+
+        for (int j = 0; j < 20; j++) {
+        }
+        //System.out.println(j); // j ist out of scope
+
+        // Bei dem for-each MUSS die Laufvariable direkt im Head erzeugt werden
+        for(int a : new int[]{1,2,3,4,5}) {
+            System.out.println(a);
+        }
 
     }
 }
